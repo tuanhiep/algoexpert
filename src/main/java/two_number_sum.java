@@ -36,5 +36,20 @@ class Program {
         }
         return new int[0];
     }
+
+    public static int[] twoNumberSum3(int[] array, int targetSum) {
+        // Write your code here.
+        HashMap<Integer, Integer> map = new HashMap();
+        for (int i : array) {
+
+            map.put(i, targetSum - i);
+            if (targetSum - i != i && map.containsKey(targetSum - i)) {
+
+                return new int[]{i, targetSum - i};
+            }
+        }
+
+        return new int[0];
+    }
 }
 
