@@ -1,6 +1,10 @@
-import java.util.*;
+import java.util.HashMap;
 
-class Program {
+class Problem1_TwoNumberSum {
+    public static void main(String[] args) {
+
+    }
+
     public static int[] twoNumberSum1(int[] array, int targetSum) {
         // Write your code here.
         for (int i : array) {
