@@ -4,7 +4,8 @@ class Problem2_ValidateSubsequence {
     public static void main(String[] args) {
 
     }
-    public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
+
+    public static boolean isValidSubsequence1(List<Integer> array, List<Integer> sequence) {
         // Write your code here.
         boolean found = false;
         int index = 0;
@@ -23,6 +24,20 @@ class Problem2_ValidateSubsequence {
         return found;
     }
 
+    public static boolean isValidSubsequence2(List<Integer> array, List<Integer> sequence) {
+        // Write your code here.
+        int index = 0;
+        for (int num : array) {
+
+            if (num == sequence.get(index)) {
+                index++;
+            }
+            if (index == sequence.size()) return true;
+        }
+
+
+        return false;
+    }
 
 }
 
