@@ -55,7 +55,7 @@ public class Problem3_ClosestBST {
     }
 
     public static int getDistance(int value, int target) {
-        return value > target ? value - target : target - value;
+        return Math.abs(value - target);
     }
 
     static class BST {
